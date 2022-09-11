@@ -30,7 +30,7 @@ header {
     height: 600px;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(0, 0%, 26%, 0.582), hsla(0, 0%, 0%, 0.486));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.582), hsla(0, 0%, 0%, 0.486)),  url(../img/pexels-sourav-mishra-1149831.jpg); *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(0, 0%, 26%, 0.582), hsla(0, 0%, 0%, 0.486)),  url(../img/pexels-sourav-mishra-1149831.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: url(../img/pexels-sourav-mishra-1149831.jpg);   
     background-size: cover;
     background-attachment: fixed;
@@ -90,6 +90,7 @@ header .textos-header h2{
 
 .image-about-us {
     width: 48%;
+    padding: 40px;
 }
 
 .sobre-nosotros .contenido-textos{
@@ -295,4 +296,32 @@ footer{
     font-size: 18px;
     margin: 20px 0 0 0;
     color: #9e9797;
+}
+
+/*hacer la pagina responsive*/
+
+@media screen and (max-width: 770px) {
+    .image-about-us {
+        display: none;
+    }
+
+    
+}
+
+@media  screen and (max-width: 770px) {
+    .sobre-nosotros .contenido-textos {
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 770px) {
+    head{
+    background-size: auto;
+    }
+}
+
+@media  screen and (max-width: 770px) {
+    footer{
+        font-size: small;
+    }
 }
